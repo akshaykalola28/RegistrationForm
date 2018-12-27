@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akshay.registrationform.MainActivity">
+
+    <ScrollView style="@style/defaultStyle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/fn_view"
+                style="@style/editText"
+                android:hint="First Name" />
+
+            <EditText
+                android:id="@+id/ln_view"
+                style="@style/editText"
+                android:hint="Last Name" />
+
+            <TextView
+                style="@style/textHead"
+                android:padding="4dp"
+                android:text="Gender" />
+
+            <RadioGroup
+                android:id="@+id/gender_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/male_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:paddingLeft="16dp"/>
+
+                <RadioButton
+                    android:id="@+id/female_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:paddingLeft="16dp"/>
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/city_view"
+                style="@style/editText"
+                android:hint="City" />
+
+            <EditText
+                android:id="@+id/state_view"
+                style="@style/editText"
+                android:hint="State" />
+
+            <EditText
+                android:id="@+id/email_view"
+                style="@style/editText"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/co_no"
+                style="@style/editText"
+                android:hint="Contact Number"
+                android:inputType="number" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="submitForm"
+                android:text="Submit" />
+
+            <TextView
+                android:id="@+id/display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
