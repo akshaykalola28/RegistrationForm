@@ -70,7 +70,7 @@
             <EditText
                 android:id="@+id/co_no"
                 style="@style/editText"
-                android:hint="Contact Number"
+                android:hint="Mobile Number"
                 android:inputType="number" />
 
 
